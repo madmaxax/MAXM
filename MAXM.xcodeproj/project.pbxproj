@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		530437A42002915B007A30AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530437A32002915B007A30AA /* AppDelegate.swift */; };
-		530437A62002915B007A30AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530437A52002915B007A30AA /* ViewController.swift */; };
 		530437A92002915B007A30AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 530437A72002915B007A30AA /* Main.storyboard */; };
 		530437AB2002915B007A30AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 530437AA2002915B007A30AA /* Assets.xcassets */; };
 		530437AE2002915B007A30AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 530437AC2002915B007A30AA /* LaunchScreen.storyboard */; };
 		530437B92002915B007A30AA /* MAXMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530437B82002915B007A30AA /* MAXMTests.swift */; };
 		530437C42002915B007A30AA /* MAXMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530437C32002915B007A30AA /* MAXMUITests.swift */; };
+		530437D220029F39007A30AA /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530437D120029F39007A30AA /* ToDoItem.swift */; };
+		530437D42002A0A3007A30AA /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530437D32002A0A3007A30AA /* DataManager.swift */; };
+		530437DA2002ADEA007A30AA /* ToDoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530437D92002ADEA007A30AA /* ToDoTableViewCell.swift */; };
+		530437DC2002AE05007A30AA /* ToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530437DB2002AE05007A30AA /* ToDoTableViewController.swift */; };
+		5314FBF220051C1D005AEFF8 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5314FBF120051C1D005AEFF8 /* MyCollectionViewCell.swift */; };
+		5341729D2003C90800CD1AED /* BEMAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 534172962003C90700CD1AED /* BEMAnimationManager.m */; };
+		5341729E2003C90800CD1AED /* BEMPathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 534172972003C90700CD1AED /* BEMPathManager.m */; };
+		5341729F2003C90800CD1AED /* BEMCheckBoxGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 534172982003C90700CD1AED /* BEMCheckBoxGroup.m */; };
+		534172A02003C90800CD1AED /* BEMCheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 5341729A2003C90700CD1AED /* BEMCheckBox.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +44,6 @@
 /* Begin PBXFileReference section */
 		530437A02002915B007A30AA /* MAXM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MAXM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		530437A32002915B007A30AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		530437A52002915B007A30AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		530437A82002915B007A30AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		530437AA2002915B007A30AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		530437AD2002915B007A30AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +54,20 @@
 		530437BF2002915B007A30AA /* MAXMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MAXMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		530437C32002915B007A30AA /* MAXMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAXMUITests.swift; sourceTree = "<group>"; };
 		530437C52002915B007A30AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		530437D120029F39007A30AA /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		530437D32002A0A3007A30AA /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		530437D92002ADEA007A30AA /* ToDoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewCell.swift; sourceTree = "<group>"; };
+		530437DB2002AE05007A30AA /* ToDoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewController.swift; sourceTree = "<group>"; };
+		5314FBF120051C1D005AEFF8 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		534172952003C90700CD1AED /* BEMCheckBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMCheckBox.h; sourceTree = "<group>"; };
+		534172962003C90700CD1AED /* BEMAnimationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMAnimationManager.m; sourceTree = "<group>"; };
+		534172972003C90700CD1AED /* BEMPathManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMPathManager.m; sourceTree = "<group>"; };
+		534172982003C90700CD1AED /* BEMCheckBoxGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMCheckBoxGroup.m; sourceTree = "<group>"; };
+		534172992003C90700CD1AED /* BEMAnimationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMAnimationManager.h; sourceTree = "<group>"; };
+		5341729A2003C90700CD1AED /* BEMCheckBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMCheckBox.m; sourceTree = "<group>"; };
+		5341729B2003C90700CD1AED /* BEMPathManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMPathManager.h; sourceTree = "<group>"; };
+		5341729C2003C90700CD1AED /* BEMCheckBoxGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMCheckBoxGroup.h; sourceTree = "<group>"; };
+		534172A12003C96000CD1AED /* CheckboxHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckboxHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,9 +119,15 @@
 			isa = PBXGroup;
 			children = (
 				530437A32002915B007A30AA /* AppDelegate.swift */,
-				530437A52002915B007A30AA /* ViewController.swift */,
+				530437DB2002AE05007A30AA /* ToDoTableViewController.swift */,
+				534172A12003C96000CD1AED /* CheckboxHeader.h */,
+				530437D92002ADEA007A30AA /* ToDoTableViewCell.swift */,
+				530437D120029F39007A30AA /* ToDoItem.swift */,
+				530437D32002A0A3007A30AA /* DataManager.swift */,
 				530437A72002915B007A30AA /* Main.storyboard */,
+				5314FBF120051C1D005AEFF8 /* MyCollectionViewCell.swift */,
 				530437AA2002915B007A30AA /* Assets.xcassets */,
+				534172942003C90700CD1AED /* Classes */,
 				530437AC2002915B007A30AA /* LaunchScreen.storyboard */,
 				530437AF2002915B007A30AA /* Info.plist */,
 			);
@@ -123,6 +150,21 @@
 				530437C52002915B007A30AA /* Info.plist */,
 			);
 			path = MAXMUITests;
+			sourceTree = "<group>";
+		};
+		534172942003C90700CD1AED /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				534172952003C90700CD1AED /* BEMCheckBox.h */,
+				534172962003C90700CD1AED /* BEMAnimationManager.m */,
+				534172972003C90700CD1AED /* BEMPathManager.m */,
+				534172982003C90700CD1AED /* BEMCheckBoxGroup.m */,
+				534172992003C90700CD1AED /* BEMAnimationManager.h */,
+				5341729A2003C90700CD1AED /* BEMCheckBox.m */,
+				5341729B2003C90700CD1AED /* BEMPathManager.h */,
+				5341729C2003C90700CD1AED /* BEMCheckBoxGroup.h */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +236,11 @@
 					5304379F2002915B007A30AA = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
 					};
 					530437B32002915B007A30AA = {
 						CreatedOnToolsVersion = 9.2;
@@ -259,8 +306,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				530437A62002915B007A30AA /* ViewController.swift in Sources */,
+				5341729E2003C90800CD1AED /* BEMPathManager.m in Sources */,
+				530437D42002A0A3007A30AA /* DataManager.swift in Sources */,
 				530437A42002915B007A30AA /* AppDelegate.swift in Sources */,
+				534172A02003C90800CD1AED /* BEMCheckBox.m in Sources */,
+				530437D220029F39007A30AA /* ToDoItem.swift in Sources */,
+				530437DA2002ADEA007A30AA /* ToDoTableViewCell.swift in Sources */,
+				5314FBF220051C1D005AEFF8 /* MyCollectionViewCell.swift in Sources */,
+				5341729F2003C90800CD1AED /* BEMCheckBoxGroup.m in Sources */,
+				530437DC2002AE05007A30AA /* ToDoTableViewController.swift in Sources */,
+				5341729D2003C90800CD1AED /* BEMAnimationManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,10 +482,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 72E2JHSRU3;
 				INFOPLIST_FILE = MAXM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Max.MAXM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = MAXM/CheckboxHeader.h;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -441,10 +498,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 72E2JHSRU3;
 				INFOPLIST_FILE = MAXM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Max.MAXM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = MAXM/CheckboxHeader.h;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
