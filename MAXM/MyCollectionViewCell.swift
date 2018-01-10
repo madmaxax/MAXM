@@ -12,4 +12,5 @@ class MyCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var dayText: UITextField!
     @IBOutlet weak var dayDate: UITextField!
+    
 }
