@@ -22,6 +22,7 @@
 		5341729E2003C90800CD1AED /* BEMPathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 534172972003C90700CD1AED /* BEMPathManager.m */; };
 		5341729F2003C90800CD1AED /* BEMCheckBoxGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 534172982003C90700CD1AED /* BEMCheckBoxGroup.m */; };
 		534172A02003C90800CD1AED /* BEMCheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 5341729A2003C90700CD1AED /* BEMCheckBox.m */; };
+		5358313420069EF300DEAB54 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5358313320069EF300DEAB54 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		5341729B2003C90700CD1AED /* BEMPathManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMPathManager.h; sourceTree = "<group>"; };
 		5341729C2003C90700CD1AED /* BEMCheckBoxGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMCheckBoxGroup.h; sourceTree = "<group>"; };
 		534172A12003C96000CD1AED /* CheckboxHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckboxHeader.h; sourceTree = "<group>"; };
+		5358313320069EF300DEAB54 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 				5314FBF120051C1D005AEFF8 /* MyCollectionViewCell.swift */,
 				530437D120029F39007A30AA /* ToDoItem.swift */,
 				530437D32002A0A3007A30AA /* DataManager.swift */,
+				5358313320069EF300DEAB54 /* SettingsViewController.swift */,
 				530437A72002915B007A30AA /* Main.storyboard */,
 				530437AA2002915B007A30AA /* Assets.xcassets */,
 				534172942003C90700CD1AED /* Classes */,
@@ -308,6 +311,7 @@
 			files = (
 				5341729E2003C90800CD1AED /* BEMPathManager.m in Sources */,
 				530437D42002A0A3007A30AA /* DataManager.swift in Sources */,
+				5358313420069EF300DEAB54 /* SettingsViewController.swift in Sources */,
 				530437A42002915B007A30AA /* AppDelegate.swift in Sources */,
 				534172A02003C90800CD1AED /* BEMCheckBox.m in Sources */,
 				530437D220029F39007A30AA /* ToDoItem.swift in Sources */,

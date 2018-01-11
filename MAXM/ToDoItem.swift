@@ -11,6 +11,7 @@ import Foundation
 struct TodoItem : Codable {
     
     var title:String
+    var description:String
     var completed:Bool
     var createdAt:Date
     var itemIdentifier:UUID

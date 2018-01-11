@@ -12,23 +12,6 @@ class ToDoTableViewController: UITableViewController, UICollectionViewDelegate, 
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var selectedCollectionCell: NSIndexPath? {
-        didSet {
-            //2
-            var indexPaths = [IndexPath]()
-            if let selectedCollectionCell = selectedCollectionCell {
-                indexPaths.append(selectedCollectionCell as IndexPath)
-            }
-            if let oldValue = oldValue {
-                indexPaths.append(oldValue as IndexPath)
-            }
-            //3
-            collectionView?.performBatchUpdates({
-                self.collectionView?.reloadItems(at: indexPaths)
-            })
-        }
-    }
-    
     var dayArray = [String]()
     var dateArray = [String]()
     
@@ -98,22 +81,37 @@ class ToDoTableViewController: UITableViewController, UICollectionViewDelegate, 
             
             for i in 0 ..< 8 {
                 
-                switch month {
-                case 1, 3, 5, 7, 8, 10, 12:
+                if day < 29 {
                     day += 1
-                    break
-                case 4, 6, 9, 11:
-                    day += 1
-                    break
-                case 2:
-                    day += 1
-                    break
-                default:
-                    day += 2
+                } else {
+                    switch month {
+                    case 1, 3, 5, 7, 8, 10, 12:
+                        if day < 32 {
+                            day += 1
+                        } else {
+                            day = 1
+                        }
+                        break
+                    case 4, 6, 9, 11:
+                        if day < 31 {
+                            day += 1
+                        } else {
+                            day = 1
+                        }
+                        break
+                    case 2:
+                        day = 1
+                        break
+                    default:
+                        day += 1
+                    }
+                }
+                if i == 0 {
+                    day -= 1
                 }
                 let dayString = "\(day). \(month)."
                 dateArray.append(dayString)
-                
+            
             }
             return dateArray
         }
@@ -135,13 +133,16 @@ class ToDoTableViewController: UITableViewController, UICollectionViewDelegate, 
         return cell
         
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("this is the selected item at \(indexPath.row)")
+    }
 
     var todoItems:[TodoItem]!
    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        loadData()
         
     }
     
@@ -149,34 +150,6 @@ class ToDoTableViewController: UITableViewController, UICollectionViewDelegate, 
         todoItems = [TodoItem]()
         todoItems = DataManager.loadAll(TodoItem.self)
         tableView.reloadData()
-    }
-    
-    @IBAction func addTodo(_ sender: Any) {
-        let addAlert = UIAlertController(title: "New Todo Item", message: "Enter a title", preferredStyle: .alert)
-        
-        addAlert.addTextField { (textfield:UITextField) in
-            textfield.placeholder = "Todo Item Title"
-        }
-        
-        addAlert.addAction(UIAlertAction(title: "Create", style: .default, handler:
-            { (action:UIAlertAction) in
-                
-            guard let title = addAlert.textFields?.first?.text else { return }
-            let newTodo = TodoItem(title: title, completed: false, createdAt: Date(), itemIdentifier: UUID())
-            
-            newTodo.saveItem()
-                
-            self.todoItems.append(newTodo)
-                
-            let indexPath = IndexPath(row: self.tableView.numberOfRows(inSection: 0), section: 0)
-                
-            self.tableView.insertRows(at: [indexPath], with: .automatic)
-                
-        }))
-        
-        addAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
-        
-        self.present(addAlert, animated: true, completion: nil)
     }
     
     func didRequestDelete(_ cell: ToDoTableViewCell) {
@@ -207,10 +180,11 @@ class ToDoTableViewController: UITableViewController, UICollectionViewDelegate, 
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
+        // return todoItems.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return todoItems.count
+        return 0
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -238,7 +212,16 @@ class ToDoTableViewController: UITableViewController, UICollectionViewDelegate, 
         }
     }
     
-
+    override func viewWillAppear(_ animated: Bool)
+    {
+        super.viewWillAppear(animated)
+        
+        //hide navigation for screen A
+        self.navigationController?.isNavigationBarHidden = false
+    }
+    
+    
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
